@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1880px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+}
+
+:root {
+  --base-font-size: 16px;
+  --base-line-height: 1.5;
+}
+
+:root {
+  --font-primary: "Sora", serif;
+  --font-secondary: "Manrope", serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
