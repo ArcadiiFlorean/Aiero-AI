@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
+body{
+  background-image: 
+
+  linear-gradient(to right, #A2F5FF, #EA84C2);
+}
 .container {
-  max-width: 1880px;
+  max-width:1880px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.container--hero{
+
 }
 
 :root {
