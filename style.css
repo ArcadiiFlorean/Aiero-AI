@@ -337,7 +337,7 @@
 /*SERVICES*/
 .services {
   background-color: white;
-  padding-bottom: 500px;
+  padding-bottom: 51px;
 }
 
 .services__content {
@@ -405,6 +405,7 @@
 .service__grid__container {
   display: flex;
   gap: 25px;
+  margin-bottom: 120px;
 }
 
 .service__grid__block {
@@ -553,4 +554,26 @@
 .service__grid__split__button{
 margin-top: 90px;
 cursor: pointer;
+}
+
+.service__bottom__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 101%;
+  letter-spacing: -0.03em;
+  color: #111;
+
+
+}
+
+/*FEUTURES*/
+
+.features__list{
+  display: flex;
+  align-items: center;
 }
