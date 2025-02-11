@@ -184,11 +184,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-size: cover;
-  background-position: center;
+  background-size: cover, 366px;
+  background-position: center, calc(100% - 350px) calc(50% + 80px);
   background-repeat: no-repeat;
   border-radius: 25px;
-  background-image: url(./img/image.svg);
+  background-image: url(./img/image.svg), url(./img/Group\ 18420.svg);
   height: 600px;
 }
 
@@ -218,4 +218,75 @@
   letter-spacing: -0.07em;
   color: #ecf0f4;
   margin: 170px 0 0 75px;
+}
+
+.hero__bottom__right__paragraph {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  max-width: 118px;
+  margin-left: 100px;
+}
+
+.hero__button__right {
+  width: 302px;
+  height: 87px;
+  background: #ecf0f4;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 187%;
+  color: #333;
+  background-image: url(./img/Ellipse\ 5.svg), url(./img/Polygon\ 6.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 40px center, left 50px center;
+  border-radius: 25px 0;
+  border: none;
+  background-image: 
+  linear-gradient(to right, #ffffff, #facee8);
+}
+
+.hero__button__right svg {
+  margin-right: 15px;
+}
+/*neural-network-tinker*/
+.neural-network-tinker {
+  padding-top: 150px;
+  background-color: #fff;
+}
+
+.neural__content {
+  display: flex;
+}
+
+.neural__text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: #000;
+  max-width: 1110px;
+  margin-bottom: 72px;
+}
+.neural__text span {
+  background: linear-gradient(136deg, #8258c8 0%, #2c84c8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.neural__list__logo {
+  display: flex;
+  align-items: center;
+  gap: 92px;
+}
+.neural__item__logo {
+  list-style: none;
+}
+
+.neural__img {
 }
