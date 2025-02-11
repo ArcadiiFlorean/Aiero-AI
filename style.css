@@ -229,9 +229,10 @@
   color: #fff;
   max-width: 118px;
   margin-left: 100px;
+  margin-bottom: 25px;
 }
 
-.hero__button__right {
+/*.hero__button__right {
   width: 302px;
   height: 87px;
   background: #ecf0f4;
@@ -242,11 +243,55 @@
   color: #333;
   background-image: url(./img/Ellipse\ 5.svg), url(./img/Polygon\ 6.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: left 40px center, left 50px center;
+  background-position: 40px center, 50px center; 
   border-radius: 25px 0;
   border: none;
-  background-image: 
-  linear-gradient(to right, #ffffff, #facee8);
+  cursor: pointer;
+}*/
+
+/*.hero__button__icon{
+  background-image: url(./img/Ellipse\ 5.svg), url(./img/Polygon\ 6.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 40px center, 50px center; 
+  border-radius: 25px 0;
+  border: none;
+  cursor: pointer;
+}*/
+.hero__button__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 302px;
+  height: 87px;
+  background: #ecf0f4;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 187%;
+  color: #333;
+  border-radius: 25px 0;
+}
+
+.hero__button__icon {
+  position: relative;
+  width: 50px; /* Ajustează dimensiunea după necesitate */
+  height: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hero__button__icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__button__play {
+  width: 70%; /* Face cercul să ocupe tot butonul */
+  height: auto;
 }
 
 .hero__button__right svg {
@@ -256,6 +301,7 @@
 .neural-network-tinker {
   padding-top: 150px;
   background-color: #fff;
+  padding-bottom: 158px;
 }
 
 .neural__content {
@@ -288,5 +334,223 @@
   list-style: none;
 }
 
-.neural__img {
+/*SERVICES*/
+.services {
+  background-color: white;
+  padding-bottom: 500px;
+}
+
+.services__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.service__grid__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 117%;
+  letter-spacing: -0.05em;
+  color: #111;
+  max-width: 700px;
+  margin-left: 284px;
+}
+
+.services__text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 169%;
+  letter-spacing: 0.01em;
+  color: #333;
+}
+.services__button {
+  border-radius: 15px;
+  width: 171px;
+  height: 55px;
+  margin-right: 290px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  letter-spacing: 0.01em;
+  color: #333;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #45d0bd, #44b6e9);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.services__button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #44b6e9,
+    #45d0bd
+  ); 
+  border-color: #45d0bd;
+  cursor: pointer;
+}
+
+.service__grid__container {
+  display: flex;
+  gap: 25px;
+}
+
+.service__grid__block {
+  width: 455px;
+  height: 561px;
+  background: linear-gradient(135deg, #45d0bd 0%, #44b6e9 100%);
+  border-radius: 25px;
+}
+
+.service__grid__content {
+  margin-top: 350px;
+  margin-left: 45px;
+}
+
+.service__grid__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  max-width: 244px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.service__grid__description {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 187%;
+  color: #fff;
+}
+.service__grid__button {
+  margin-top: 55px;
+  cursor: pointer;
+}
+
+.services__description--and--button {
+  display: flex;
+}
+/*service--grid--2*/
+
+.service__grid__block--2 {
+  border-radius: 10px 10px 0 0;
+  width: 455px;
+  height: 561px;
+  border-radius: 25px;
+  position: relative; /* Asigură poziționarea corectă a conținutului */
+  background: linear-gradient(135deg, #cc83ee 0%, #a67cf5 100%) /* Gradientul */;
+}
+
+.service__grid__title--2 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  max-width: 244px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  max-width: 260px;
+  margin-top: 53px;
+  margin-bottom: 11px;
+  margin-left: 43px;
+}
+
+.service__grid__description--2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 187%;
+  color: #fff;
+  max-width: 377px;
+  margin-left: 43px;
+}
+.service__grid__img--and--button {
+  margin-top: 245px;
+}
+.service__grid__img {
+  display: flex;
+  margin-top: 245px;
+  margin-left: 38px;
+}
+.service__grid__img svg {
+  margin-left: 36px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/*service__grid__block--3*/
+.service__grid__split__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140%;
+  color: #111;
+  max-width: 297px;
+  padding-top: 96px;
+  margin-left: 48px;
+}
+
+.service__grid__split {
+  width: 391px;
+  height: 191px;
+  background: #ecf0f4;
+  border-radius: 25px;
+  background-image: url(./img/Group\ 18418.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-bottom: 11px;
+}
+.service__grid__split--2 {
+  width: 388px;
+  height: 351px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #cc83ee 0%, #a67cf5 100%) /* Gradientul */;
+}
+
+.service__grid__split__img {
+  margin: 58px 0 30px 55px;
+}
+
+.ervice__grid__split__title {
+  margin-left: 55px;
+}
+
+
+.service__grid__split__description--and--icon{
+  display: flex;
+}
+.service__grid__split__description {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 187%;
+  color: #fff;
+  margin-left: 55px;
+}
+
+.service__grid__split__button{
+margin-top: 90px;
+cursor: pointer;
 }
