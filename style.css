@@ -174,7 +174,7 @@
   background-color: #ef6464;
   border: navajowhite;
 }
-.hero__button:hover{
+.hero__button:hover {
   background-color: #ec2f2f;
   cursor: pointer;
 }
@@ -194,6 +194,7 @@
   border-radius: 25px;
   background-image: url(./img/image.svg), url(./img/Group\ 18420.svg);
   height: 600px;
+
 }
 
 .hero__bottom__left {
@@ -600,11 +601,10 @@
 
 .features__item {
   max-width: 303px;
-}
 
-.features__item:hover {
   cursor: pointer;
 }
+
 .features__img {
   margin-bottom: 23px;
 }
@@ -628,7 +628,6 @@
 .black__content {
   margin-left: 844px;
   max-width: 700x;
-
 }
 .black__title {
   font-family: var(--font-family);
@@ -691,17 +690,95 @@
   background-clip: content-box, border-box;
 }
 
-.black__button:hover{
-
+.black__button:hover {
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 25px;
   background-image: linear-gradient(rgb(39, 204, 83), rgb(32, 32, 32)),
     linear-gradient(to left, rgb(68, 182, 233), rgb(69, 208, 189));
-
 }
 .black__button__icon {
   margin-left: 10px;
 }
+/*achievements*/
+.achievemens{
+  background: radial-gradient(circle, #7945ce 0%, #f9f9f9 40%);
+}
+
+.achievements__content {
+  margin-left: 290px;
+  margin-right: 289px;
+
+}
+.achievements__grid {
+  display: flex;
+  flex-wrap: wrap;
+  /*display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr ; /* 3 coloane de dimensiuni egale */
+  /*grid-template-rows: 1fr 1fr; /* 2 rânduri de dimensiuni egale */
+  /*gap: 10px;*/
+}
+
+.achievement {
+
+  width: 310px;
+  height: 248px;
+  
+}
+
+.achievements__heading {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 117%;
+  letter-spacing: -0.05em;
+  color: #111;
+  margin-bottom: 36px;
+  max-width: 784px;
+}
+
+.achievement__stat {
+  font-family: var(--font-family);
+  color: white;
+  text-shadow: -1px -1px 0 #8258c8, 1px -1px 0 #2c84c8, -1px 1px 0 #8258c8,
+  1px 1px 0 #2c84c8;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 62%;
+  letter-spacing: -0.03em;
+  margin:79px 0 30px
+}
 
 
+
+.achievement__metric {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 175%;
+  color: #000000;
+}
+
+.achievement__description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #000000;
+}
+
+.achievement__row{
+
+}
+
+.achievement__list{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+ 
+
+}
+
+.achievement__list-link img{
+  margin-right: 18px;
+}

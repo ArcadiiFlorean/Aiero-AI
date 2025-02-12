@@ -1,0 +1,29 @@
+.achievement--modify {
+  background-color: black;
+ 
+  grid-column: span 2 ; /* primul element ocupă două coloane */
+  border-radius: 25px;
+  margin-right: 76px;
+}
+
+.achievement__stat--modify {
+  color: white;
+  color: black;
+  text-shadow: -1px -1px 0 #8258c8, 1px -1px 0 #2c84c8, -1px 1px 0 #8258c8,
+    1px 1px 0 #2c84c8;
+  margin: 79px 59px 30px 70px;
+}
+
+.achievement__metric--modify {
+  color: white;
+  margin-left: 77px;
+}
+.achievement__description--modify {
+  color: white;
+  margin-left: 77px;
+  max-width: 330px;
+}
+
+.body--modify {
+  background-color: azure;
+}
