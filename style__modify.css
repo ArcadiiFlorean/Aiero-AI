@@ -1,5 +1,5 @@
 .achievement--modify {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
  
   grid-column: span 2 ; /* primul element ocupă două coloane */
   border-radius: 25px;
@@ -22,6 +22,7 @@
   color: white;
   margin-left: 77px;
   max-width: 330px;
+  margin-bottom: 30px;
 }
 
 .body--modify {

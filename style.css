@@ -194,7 +194,6 @@
   border-radius: 25px;
   background-image: url(./img/image.svg), url(./img/Group\ 18420.svg);
   height: 600px;
-
 }
 
 .hero__bottom__left {
@@ -660,6 +659,7 @@
   line-height: 187%;
   color: #fff;
   margin-bottom: 20px;
+  max-width: 772px;
 }
 
 .black__description--2 {
@@ -670,6 +670,7 @@
   color: #fff;
   font-weight: 500;
   margin-bottom: 25px;
+  max-width: 772px;
 }
 
 .black__button {
@@ -701,16 +702,16 @@
   margin-left: 10px;
 }
 /*achievements*/
-.achievemens{
+.achievemens {
   background: radial-gradient(circle, #7945ce 0%, #f9f9f9 40%);
 }
 
 .achievements__content {
-  margin-left: 290px;
-  margin-right: 289px;
-
+  margin-left: 270px;
+  margin-right: 279px;
 }
-.achievements__grid {
+
+.achievements__flex {
   display: flex;
   flex-wrap: wrap;
   /*display: grid;
@@ -720,10 +721,8 @@
 }
 
 .achievement {
-
   width: 310px;
   height: 248px;
-  
 }
 
 .achievements__heading {
@@ -741,15 +740,13 @@
   font-family: var(--font-family);
   color: white;
   text-shadow: -1px -1px 0 #8258c8, 1px -1px 0 #2c84c8, -1px 1px 0 #8258c8,
-  1px 1px 0 #2c84c8;
+    1px 1px 0 #2c84c8;
   font-weight: 700;
   font-size: 80px;
   line-height: 62%;
   letter-spacing: -0.03em;
-  margin:79px 0 30px
+  margin: 79px 0 30px;
 }
-
-
 
 .achievement__metric {
   font-family: var(--font-family);
@@ -767,18 +764,39 @@
   color: #000000;
 }
 
-.achievement__row{
-
+.achievement__row {
+  padding-top: 75px;
 }
 
-.achievement__list{
+.achievement__logo {
+  margin-bottom: 23px;
+}
+
+.achievement__row--title {
+  margin-bottom: 24px;
+}
+.achievement__list {
   display: flex;
   flex-direction: column;
   list-style: none;
- 
-
+}
+.achievement__list-item {
+  margin-bottom: 16px;
+}
+.achievement__list-link {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 250%;
+  color: #333;
 }
 
-.achievement__list-link img{
+.achievement__list-link img {
   margin-right: 18px;
+}
+
+.achivement__row__content {
+  display: flex;
+  justify-content: space-between;
 }
