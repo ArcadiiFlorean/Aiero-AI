@@ -625,9 +625,16 @@
 }
 
 .black__content {
-  margin-left: 844px;
-  max-width: 700x;
+  display: flex;
+
+  gap: 42px;
+  max-width: 700px;
 }
+
+.black__img {
+  padding-top: 75px;
+}
+
 .black__title {
   font-family: var(--font-family);
   font-weight: 700;
@@ -801,7 +808,7 @@
   justify-content: space-between;
 }
 /*TESTIOMONIAL*/
-.testimonials{
+.testimonials {
   background-color: white;
 }
 
@@ -845,7 +852,7 @@
   font-size: 16px;
   line-height: 219%;
   color: #fff;
-  margin-left: 136px;
+  margin-left: 130px;
   margin-bottom: 205px;
 }
 .testimonials__buttons {
@@ -869,20 +876,19 @@
 }
 
 .button--left:hover {
-  background: linear-gradient(45deg, #00ff00, #00ffff);
+  background: linear-gradient(45deg, #7422e6, #27a7f1);
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
 }
 .button--right:hover {
-  background: linear-gradient(45deg, #00ff00, #00ffff);
+  background: linear-gradient(45deg, #7422e6, #27a7f1);
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
 }
-.testimonial__right{
+.testimonial__right {
   border-radius: 25px;
   width: 740px;
   height: 792px;
 
   background: linear-gradient(136deg, #8258c8 0%, #2c84c8 100%);
-
 }
 
 .testimonial__title {
@@ -894,7 +900,7 @@
   color: #fff;
   margin-top: 179px;
   margin-bottom: 138px;
-margin-left: 48px;
+  margin-left: 48px;
 }
 .testimonial__stat {
   font-family: var(--second-family);
@@ -902,9 +908,9 @@ margin-left: 48px;
   font-size: 100px;
   line-height: 50%;
   letter-spacing: -0.05em;
-  color: rgb(251, 236, 236);
+  color: rgb(255, 255, 255);
   margin-bottom: 40px;
-margin-left: 69px;
+  margin-left: 69px;
 }
 
 .testimonial__span {
@@ -913,5 +919,55 @@ margin-left: 69px;
   font-size: 20px;
   line-height: 175%;
   color: #fff;
-margin-left: 69px;
+  margin-left: 69px;
+}
+/*FAQ*/
+
+.faq {
+}
+
+.faq__content {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.faq__content__right {
+  max-width: 885px;
+}
+.faq__title {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 117%;
+  letter-spacing: -0.05em;
+  color: #111;
+  margin-bottom: 74px;
+}
+
+.faq-question {
+  --font-secondary: "Sora", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 83%;
+  letter-spacing: -0.03em;
+  color: #111;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  position: relative; /* Rămâne fixă */
+  z-index: 1; /* Asigură că întrebarea este deasupra răspunsului */
+  margin-bottom: 40px;
+}
+.faq-answer {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 187%;
+  color: #333;
+}
+
+hr {
+  margin-bottom: 39px;
 }
