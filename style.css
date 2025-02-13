@@ -923,7 +923,8 @@
 }
 /*FAQ*/
 
-.faq {
+.section__faq {
+  background: #f0f2f4;
 }
 
 .faq__content {
@@ -955,7 +956,6 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-
   position: relative; /* Rămâne fixă */
   z-index: 1; /* Asigură că întrebarea este deasupra răspunsului */
   margin-bottom: 40px;
@@ -966,6 +966,7 @@
   font-size: 16px;
   line-height: 187%;
   color: #333;
+
 }
 
 hr {
