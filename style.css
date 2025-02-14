@@ -1120,3 +1120,34 @@
   max-width: 346px;
   margin-left: 39px;
 }
+/*PRTNERS*/
+.partners{
+  background-color: white;
+}
+.partners__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 117%;
+  letter-spacing: -0.05em;
+  color: #111;
+  max-width: 737px;
+  margin-bottom: 50px;
+  padding-top: 153px;
+}
+
+.partners__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1342px;
+}
+
+.partners__logo__list {
+  list-style: none;
+}
+
+.partners__contant{
+ margin-left: 290px;
+
+}
