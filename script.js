@@ -2,17 +2,16 @@ document.querySelectorAll('.faq-question').forEach(item => {
     item.addEventListener('click', () => {
         const answer = item.nextElementSibling;
         
-        // Verifică dacă răspunsul este deja deschis
-        if (answer.style.display === "block") {
-            answer.style.display = "none";
-        } else {
-            // Închide toate răspunsurile deschise
-            document.querySelectorAll('.faq-answer').forEach(ans => {
-                ans.style.display = "none";
-            });
-            // Deschide răspunsul pentru întrebarea curentă
-            answer.style.display = "block";
-        }
+        // Închide toate răspunsurile și resetează imaginile
+        document.querySelectorAll('.faq-answer').forEach(ans => {
+            if (ans !== answer) {
+                ans.classList.remove('open');
+                ans.previousElementSibling.classList.remove('open');
+            }
+        });
+
+        // Alternăm clasa "open" pentru buton și răspuns
+        answer.classList.toggle('open');
+        item.classList.toggle('open');
     });
 });
-

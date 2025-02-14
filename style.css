@@ -923,6 +923,9 @@
 }
 /*FAQ*/
 
+.faq {
+  min-height: 800px;
+}
 .section__faq {
   background: #f0f2f4;
 }
@@ -930,12 +933,15 @@
 .faq__content {
   display: flex;
   align-items: center;
-  gap: 52px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-left: 100px;
 }
 
 .faq__content__right {
   max-width: 885px;
 }
+
 .faq__title {
   font-family: var(--font-secondary);
   font-weight: 400;
@@ -946,29 +952,171 @@
   margin-bottom: 74px;
 }
 
+.faq__item {
+  border-bottom: 2px solid black;
+}
+
 .faq-question {
-  --font-secondary: "Sora", serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 83%;
-  letter-spacing: -0.03em;
-  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Împinge textul la stânga și imaginea la dreapta */
+  width: 100%;
   cursor: pointer;
   background-color: transparent;
   border: none;
-  position: relative; /* Rămâne fixă */
-  z-index: 1; /* Asigură că întrebarea este deasupra răspunsului */
+  font-weight: 400;
+  font-size: 30px;
+  color: #111;
+  padding: 10px 15px;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
+
+.faq-question img {
+  width: 10px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  margin-left: auto;
+}
+.faq-question.open img {
+  transform: rotate(-90deg);
+}
+
 .faq-answer {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 187%;
   color: #333;
-
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  padding: 0;
+  border-bottom: 2px solid black;
+}
+.faq-answer.open {
+  max-height: 200px;
+  padding: 10px 0;
 }
 
-hr {
-  margin-bottom: 39px;
+.faq__button {
+  width: 171px;
+  height: 55px;
+  margin-right: 290px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  letter-spacing: 0.01em;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+    linear-gradient(to right, rgb(69, 208, 189), rgb(68, 182, 233));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.faq__button:hover {
+  cursor: pointer;
+  color: #000;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #00ff00, #00ffff);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
+}
+/*blog*/
+.blog {
+  background-color: rgb(255, 255, 255);
+}
+.blog__content {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-left: 265px;
+  margin-bottom: 46px;
+}
+.blog__title {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 117%;
+  letter-spacing: -0.05em;
+  color: #111;
+  max-width: 630px;
+  padding-top: 150px;
+}
+.blog__button {
+  width: 171px;
+  height: 55px;
+  margin-right: 290px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  letter-spacing: 0.01em;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+    linear-gradient(to right, rgb(69, 208, 189), rgb(68, 182, 233));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.blog__button:hover {
+  cursor: pointer;
+  color: #000;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #00ff00, #00ffff);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
+}
+.blog__cards {
+  display: flex;
+  margin-left: 265px;
+  gap: 37px;
+}
+
+.blog__cards-item {
+  display: flex;
+  flex-direction: column;
+  width: 427px;
+  height: 561px;
+  border-radius: 25px;
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    /* Coral */ #dde0ee /* Deep Sky Blue */
+  );
+  transition: background 0.3s ease;
+}
+
+.blog__cards-item:hover {
+  box-shadow: 15px 20px 12px rgba(255, 255, 255, 0.6),
+    /* Umbră deschisă */ -15px -20px 12px rgba(231, 234, 239, 0.6); /* Umbră cyan mai intensă */
+  cursor: pointer;
+}
+
+.blog__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog__img {
+  width: 420px;
+  height: 314px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+}
+
+.blog__card__link {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #111;
+  max-width: 346px;
+  margin-left: 39px;
 }
