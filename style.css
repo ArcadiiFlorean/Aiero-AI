@@ -1155,7 +1155,8 @@
 .contact-us__content {
   display: flex;
   align-items: center;
-gap: 111px;
+  justify-content: center;
+  gap: 111px;
 }
 
 .contact-us__title {
@@ -1226,7 +1227,6 @@ gap: 111px;
   line-height: 222%;
   letter-spacing: -0.03em;
   color: #000000;
-
 }
 
 .contact-us__address {
@@ -1287,7 +1287,7 @@ input {
   height: 50px;
 }
 
- ::placeholder{
+::placeholder {
   padding-left: 20px;
   padding-top: 20px;
 }
@@ -1318,6 +1318,33 @@ textarea {
 }
 
 .form__button:hover {
+  cursor: pointer;
+  color: #000;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #00ff00, #00ffff);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+
+.contact__button {
+  width: 171px;
+  height: 55px;
+  margin-right: 290px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 193%;
+  letter-spacing: 0.01em;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(rgb(37, 37, 37), rgb(32, 32, 32)),
+    linear-gradient(to right, rgb(69, 208, 189), rgb(68, 182, 233));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.contact__button:hover {
   cursor: pointer;
   color: #000;
   border-radius: 25px;
