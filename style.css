@@ -1157,6 +1157,7 @@
   align-items: center;
   justify-content: center;
   gap: 111px;
+  border-bottom: 1px solid black;
 }
 
 .contact-us__title {
@@ -1319,7 +1320,7 @@ textarea {
 
 .form__button:hover {
   cursor: pointer;
-  color: #000;
+  color: #584f4f;
   border-radius: 25px;
   background: linear-gradient(45deg, #00ff00, #00ffff);
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
@@ -1350,4 +1351,10 @@ textarea {
   border-radius: 25px;
   background: linear-gradient(45deg, #00ff00, #00ffff);
   box-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.contact__text__bottom{
+  display: flex;
+  align-items: center;
+
 }
