@@ -1170,6 +1170,8 @@
   border-radius: 25px;
   width: 1880px;
   height: 1808px;
+  background: radial-gradient(circle, #AD91FE 0%, #000000 100%);
+
 }
 
 .contact-us__title {
@@ -1404,6 +1406,7 @@ textarea {
   justify-content: space-between;
   gap: 177px;
   margin: 0 275px 50px 267px;
+  
 }
 
 .footer__logo {
@@ -1419,8 +1422,9 @@ textarea {
 
 .footer__content--right {
   display: flex;
-
   gap: 90px;
+
+
 }
 
 .footer__social__item {
