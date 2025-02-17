@@ -1445,6 +1445,9 @@ textarea {
   text-decoration: none;
   color: white;
 }
+.social__link:hover{
+  color: green;
+} 
 
 .footer__privacy {
   display: flex;
@@ -1456,4 +1459,43 @@ textarea {
   font-size: 14px;
   line-height: 171%;
   color: #bebebe;
+}
+
+
+/*MEDIAQUERY*/
+/* Stil pentru ecrane mari (peste 2000px) */
+@media (min-width: 2000px) {
+  body {
+    max-width: 2000px;
+    margin: auto;
+  }
+}
+
+/* Laptopuri și ecrane mai mici (1200px - 1999px) */
+@media (max-width: 1999px) {
+  body {
+    max-width: 1200px;
+  }
+}
+
+/* Tablete și ecrane medii (768px - 1199px) */
+@media (max-width: 1199px) {
+  body {
+    max-width: 90%;
+  }
+}
+
+/* Telefoane mobile mari (480px - 767px) */
+@media (max-width: 767px) {
+  body {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Telefoane mici (sub 480px) */
+@media (max-width: 479px) {
+  body {
+    font-size: 14px;
+  }
 }
