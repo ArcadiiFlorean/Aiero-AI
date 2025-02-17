@@ -1170,8 +1170,7 @@
   border-radius: 25px;
   width: 1880px;
   height: 1808px;
-  background: radial-gradient(circle, #AD91FE 0%, #000000 100%);
-
+  background: radial-gradient(circle, #ad91fe 0%, #000000 100%);
 }
 
 .contact-us__title {
@@ -1406,7 +1405,6 @@ textarea {
   justify-content: space-between;
   gap: 177px;
   margin: 0 275px 50px 267px;
-  
 }
 
 .footer__logo {
@@ -1423,8 +1421,6 @@ textarea {
 .footer__content--right {
   display: flex;
   gap: 90px;
-
-
 }
 
 .footer__social__item {
@@ -1445,9 +1441,9 @@ textarea {
   text-decoration: none;
   color: white;
 }
-.social__link:hover{
+.social__link:hover {
   color: green;
-} 
+}
 
 .footer__privacy {
   display: flex;
@@ -1461,41 +1457,186 @@ textarea {
   color: #bebebe;
 }
 
-
 /*MEDIAQUERY*/
 /* Stil pentru ecrane mari (peste 2000px) */
-@media (min-width: 2000px) {
-  body {
-    max-width: 2000px;
-    margin: auto;
-  }
-}
 
 /* Laptopuri și ecrane mai mici (1200px - 1999px) */
-@media (max-width: 1999px) {
-  body {
-    max-width: 1200px;
+
+/* La dimensiuni mai mici de 1200px */
+@media (max-width: 1200px) {
+  .hero__main__title img {
+    width: 550px;
+    height: auto;
+  }
+  .hero__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .hero__title {
+    font-size: 70px;
+    margin-left: 0;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero__paragraph {
+    font-size: 14px;
+    margin-right: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .hero__button {
+    width: 180px;
+    height: 50px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .hero__bottom {
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+  }
+
+  .hero__button__right {
+    display: flex;
+    margin-left: 360px;
+  }
+
+  .hero__bottom__paragraph {
+    font-size: 30px;
+    margin: 40px 0 0;
+    margin-left: 25px;
+  }
+
+  .hero__main__title {
+    font-size: 180px;
+    margin: 50px 0 0;
+  }
+
+  .hero__bottom__right__paragraph {
+    font-size: 14px;
+    margin-left: 0;
+    text-align: center;
+    margin-left: 430px;
+  }
+
+  .hero__button__right {
+    width: 250px;
+    height: 70px;
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .hero__button__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero__button__play {
+    width: 60%;
   }
 }
+
+@media (max-width: 1200px) {
+  .neural__img {
+    display: none;
+  }
+
+  .neural-network-tinker {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .neural__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .neural__text {
+    font-size: 60px;
+    line-height: 120%;
+    margin-bottom: 40px;
+  }
+
+  .neural__list__logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 160px;
+  }
+
+  .neural__item__logo {
+    width: 120px; /* Adjust logo size */
+  }
+}
+
+@media (max-width: 1200px) {
+  .services__title {
+    display: flex;
+    margin: 0;
+  }
+  .services__button {
+    margin-right: 0;
+  }
+
+  .service__grid__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Stilurile specifice pentru ecranele de dimensiuni mici până la 1200px */
+  .black__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Schimbă layout-ul pe mobil pentru a aranja elementele pe verticală */
+    gap: 20px; /* Micșorează spațiul dintre elemente */
+  }
+
+  .black__title {
+    font-size: 120px; /* Reduce dimensiunea titlului pentru ecranele mai mici */
+    padding-top: 180px; /* Ajustează padding-ul */
+  }
+
+  .black__sutitle {
+    font-size: 50px; /* Ajustează dimensiunea fontului pentru subtitlu */
+  }
+
+  .black__description {
+    font-size: 14px; /* Micșorează fontul pentru descriere */
+    max-width: 600px; /* Redu lățimea maximă pentru descriere */
+  }
+
+  .black__button {
+    width: auto;
+    padding: 10px 20px; /* Ajustează dimensiunea butonului */
+    margin-right: 0; /* Elimină marginea dreaptă pentru a alinia butonul */
+  }
+
+  .black__img {
+    display: none;
+  }
+
+  .black__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Pentru telefoane sub 768px */
 
 /* Tablete și ecrane medii (768px - 1199px) */
-@media (max-width: 1199px) {
-  body {
-    max-width: 90%;
-  }
-}
 
 /* Telefoane mobile mari (480px - 767px) */
-@media (max-width: 767px) {
-  body {
-    max-width: 100%;
-    padding: 10px;
-  }
-}
 
 /* Telefoane mici (sub 480px) */
-@media (max-width: 479px) {
-  body {
-    font-size: 14px;
-  }
-}
