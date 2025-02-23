@@ -1593,6 +1593,13 @@ textarea {
 }
 
 @media (max-width: 1200px) {
+  .achivement__row__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
   /* Stilurile specifice pentru ecranele de dimensiuni mici până la 1200px */
   .black__content {
     flex-direction: column;
@@ -1633,6 +1640,36 @@ textarea {
   }
 }
 
+@media (max-width: 1200px) {
+  .blog__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .testimonial__left {
+    margin: 0;
+  }
+
+  .testimonial__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial__right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .faq__img {
+    display: none;
+  }
+}
+
 /* Pentru telefoane sub 768px */
 
 /* Tablete și ecrane medii (768px - 1199px) */
@@ -1640,3 +1677,26 @@ textarea {
 /* Telefoane mobile mari (480px - 767px) */
 
 /* Telefoane mici (sub 480px) */
+
+@media (max-width: 1200px) {
+  .partners__contant {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-us__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-us__mistake {
+    width: auto;
+    height: auto;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
