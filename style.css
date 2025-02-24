@@ -1947,7 +1947,9 @@ textarea {
   .black__title {
     margin: 0;
   }
-
+  .blog__button {
+    margin: 20px 270px 0 0;
+}
   .black__sutitle {
     margin-left: 20px;
   }
@@ -1968,9 +1970,6 @@ textarea {
     margin: 0;
   }
 
-  .achievement--modify {
-    margin-right: -55px;
-  }
 
   .testimonial__left {
     width: 724px;
@@ -2018,5 +2017,54 @@ textarea {
 
 .footer__privacy{
   margin: 0;
+}
+}
+
+@media (max-width: 480px) {
+  .header__contact--btn {
+    width: 115px;
+    height: 46px;
+  }
+
+  .header__nav-left {
+
+    gap: 20px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hero__bottom__paragraph {
+  margin-left: 0px;
+}
+
+.hero__main__title img {
+  margin: 0;
+  width: 408px;
+}
+
+.service__bottom__title {
+
+  font-size: 40px;
+
+}
+
+.features__title {
+font-size: 40px;
+}
+.features__title{
+  max-width: 350px;
+}
+
+
+#features__title_id {
+  max-width: 440px;
+}
+
+.features__list {
+gap: 45px;
 }
 }
