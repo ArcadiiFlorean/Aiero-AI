@@ -1881,21 +1881,75 @@ textarea {
     margin-left: 176px;
   }
 
+  .black__about{
+    height: auto;
+
+  }
+
   .black__sutitle {
     margin-left: 176px;
   }
 
   .black__description {
     margin-left: 190px;
+  }
+
+  .black__description--2 {
+    font-size: 14px;
+    margin-left: 190px;
+  }
+
+  .black__button {
+    margin: 0 0 150px 384px;
+  }
+  .achievements__heading{
+    text-align: center;
+    margin-left: 80px;
+  }
+  .achievements__flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+
+  .testimonial__content{
+    display: initial;
+
+  }
+
+  .testimonial__left{
+    width: 952px;
+  }
+
+  .testimonial__text{
+    margin: 0 auto;
+  }
+.testimonial__author{
+    margin: 30px 141px 226px 490px;
+
 }
 
-.black__description--2 {
-  font-size: 14px;
-  margin-left: 190px;
+.testimonial__title {
+  padding: 124px 40px 90px 52px;
+
+
+}
+.faq__content__right {
+margin-right: 112px;
 }
 
-.black__button{
-margin: 0 0 150px 50px ;
+.faq__title{
+text-align: center;
 
+}
+
+.faq-question{
+  display: initial;
+}
+
+.faq__button{
+  
 }
 }
