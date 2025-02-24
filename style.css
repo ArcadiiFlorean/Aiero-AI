@@ -2017,7 +2017,7 @@ textarea {
     margin: 0;
   }
 }
-
+/*telefoane mici */
 @media (max-width: 480px) {
   .header__contact--btn {
     width: 115px;
@@ -2039,7 +2039,11 @@ textarea {
 
   .hero__main__title img {
     margin: 0;
-    width: 408px;
+    width: 380px;
+  }
+
+  .neural__list__logo{
+    gap: 18px;
   }
 
   .service__bottom__title {
@@ -2054,7 +2058,7 @@ textarea {
   }
 
   #features__title_id {
-    max-width: 440px;
+    max-width: 360px;
   }
 
   .features__list {
@@ -2090,7 +2094,7 @@ textarea {
   }
 
   .testimonial__left {
-    width: 440px;
+    width: 360px;
   }
 
   .testimonial__author {
@@ -2106,6 +2110,23 @@ textarea {
 }
 .faq__content {
 padding-bottom: 5px;
+}
+
+
+.blog__cards-item {
+  width: 360px;
+}
+
+.blog__img {
+  width: 360px;
+
+}
+
+.faq{
+  max-width: 350px;
+}
+.faq__content__right{
+  margin: 0px;
 }
 
 .faq__button {
