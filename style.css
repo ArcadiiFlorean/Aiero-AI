@@ -1475,7 +1475,7 @@ textarea {
   }
 
   .hero__title {
-    font-size: 4rem; /* Adjusting for better readability */
+    font-size: 4rem;
     margin: 0;
   }
 
@@ -1514,12 +1514,6 @@ textarea {
     width: 100%;
   }
 
-  .hero__main__title img {
-  }
-
-  .hero__bottom__right__paragraph {
-  }
-
   .hero__button__icon {
     width: 40px;
     height: 40px;
@@ -1528,9 +1522,7 @@ textarea {
   .hero__button__play {
     width: 60%;
   }
-}
 
-@media (max-width: 1200px) {
   .neural__img {
     display: none;
   }
@@ -1560,20 +1552,18 @@ textarea {
   }
 
   .neural__item__logo {
-    width: 120px; /* Adjust logo size */
+    width: 120px;
   }
-}
 
-@media (max-width: 1200px) {
   .features__title {
     text-align: center;
   }
-}
-@media (max-width: 1200px) {
+
   .services__title {
     display: flex;
     margin: 0;
   }
+
   .services__button {
     margin-right: 0;
   }
@@ -1582,39 +1572,26 @@ textarea {
     width: 370px;
     height: 565px;
   }
-  .service__grid__block {
-  }
-}
 
-@media (max-width: 1200px) {
   .achivement__row__content {
     display: flex;
     flex-direction: column;
   }
-}
-
-@media (max-width: 1200px) {
-  /* Stilurile specifice pentru ecranele de dimensiuni mici până la 1200px */
-  .black__content {
-  }
 
   .black__title {
-    font-size: 240px; /* Reduce dimensiunea titlului pentru ecranele mai mici */
-    padding-top: 180px; /* Ajustează padding-ul */
+    font-size: 240px;
+    padding-top: 180px;
   }
 
   .black__sutitle {
-    font-size: 50px; /* Ajustează dimensiunea fontului pentru subtitlu */
+    font-size: 50px;
     margin-left: 208px;
   }
 
-  .black__description {
-    margin-left: 208px; /* Redu lățimea maximă pentru descriere */
-  }
+  .black__description,
   .black__description--2 {
-    font-size: 14px; /* Micșorează fontul pentru descriere */
-
-    margin-left: 208px; /* Redu lățimea maximă pentru descriere */
+    margin-left: 208px;
+    font-size: 14px;
   }
 
   .black__button {
@@ -1632,9 +1609,7 @@ textarea {
     justify-content: center;
     text-align: center;
   }
-}
 
-@media (max-width: 1200px) {
   .achievements__content {
     margin: 0;
   }
@@ -1649,15 +1624,14 @@ textarea {
     display: flex;
     flex-direction: column;
   }
-}
 
-@media (max-width: 1200px) {
   .blog__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 122px;
   }
+
   .blog__cards {
     display: flex;
     flex-direction: column;
@@ -1674,32 +1648,16 @@ textarea {
     margin: 25px 500px 0 0;
   }
 
-  .blog__cards {
-    display: flex;
-    flex-direction: initial;
-  }
-
   .blog__cards-item {
     width: 360px;
   }
 
-  .blog__img {
-    width: auto;
-  }
-}
-
-@media (max-width: 1200px) {
   .partners__title {
     margin-left: 205px;
     text-align: center;
   }
-}
 
-@media (max-width: 1200px) {
-  .testimonial__left {
-    margin: 0;
-  }
-
+  .testimonial__left,
   .testimonial__text {
     margin: 0;
     text-align: center;
@@ -1713,32 +1671,20 @@ textarea {
   .testimonial__right {
     width: 100%;
   }
-}
 
-@media (max-width: 1200px) {
   .faq__content {
     margin-left: 150px;
   }
-  .faq__img {
+
+  .faq__img,
+  .line {
     display: none;
   }
-}
 
-/* Pentru telefoane sub 768px */
-
-/* Tablete și ecrane medii (768px - 1199px) */
-
-/* Telefoane mobile mari (480px - 767px) */
-
-/* Telefoane mici (sub 480px) */
-
-@media (max-width: 1200px) {
   .partners__contant {
     margin: 0;
   }
-}
 
-@media (max-width: 1200px) {
   .contact-us__content {
     display: flex;
     flex-direction: column;
@@ -1753,9 +1699,11 @@ textarea {
     margin-left: 162px;
     text-align: center;
   }
+
   .contact-us__description {
     max-width: 902px;
   }
+
   .contact-us__mistake {
     width: auto;
     height: auto;
@@ -1763,13 +1711,14 @@ textarea {
 
   .contact__content__bottom {
     display: initial;
-
     text-align: center;
     margin-left: 150px;
   }
+
   .contact__title__bottom {
     max-width: 1500px;
   }
+
   .footer__content {
     display: flex;
     flex-direction: column;
@@ -1780,8 +1729,6 @@ textarea {
     margin-bottom: 25px;
   }
 
-  .footer__content--left {
-  }
   .footer__logo {
     margin-left: 306px;
   }
@@ -1791,11 +1738,6 @@ textarea {
   }
 }
 
-@media (max-width: 1200px) {
-  .line {
-    display: none;
-  }
-}
 /*991*/ /* Stiluri pentru tablete */
 @media (max-width: 991px) {
   .header__nav-bar {
@@ -1881,9 +1823,8 @@ textarea {
     margin-left: 176px;
   }
 
-  .black__about{
+  .black__about {
     height: auto;
-
   }
 
   .black__sutitle {
@@ -1902,54 +1843,80 @@ textarea {
   .black__button {
     margin: 0 0 150px 384px;
   }
-  .achievements__heading{
+  .achievements__heading {
     text-align: center;
     margin-left: 80px;
   }
-  .achievements__flex{
+  .achievements__flex {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-
-
-  .testimonial__content{
+  .testimonial__content {
     display: initial;
-
   }
 
-  .testimonial__left{
+  .testimonial__left {
     width: 952px;
   }
 
-  .testimonial__text{
+  .testimonial__text {
     margin: 0 auto;
   }
-.testimonial__author{
+  .testimonial__author {
     margin: 30px 141px 226px 490px;
+  }
 
+  .testimonial__title {
+    padding: 124px 40px 90px 52px;
+  }
+  .faq__content__right {
+    margin-right: 112px;
+  }
+
+  .faq__title {
+    text-align: center;
+  }
+
+  .faq-question {
+    display: initial;
+  }
+
+  .faq__button {
+    margin: 60px 265px 0px 265px;
+  }
+
+  .blog__title {
+    text-align: center;
+    font-size: 3rem;
+    margin-right: 66px;
+  }
+
+  .blog__button {
+    margin: 20px 360px 0 0;
+  }
+
+  .blog__cards {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .blog__cards-item {
+    width: 450px;
 }
 
-.testimonial__title {
-  padding: 124px 40px 90px 52px;
-
-
-}
-.faq__content__right {
-margin-right: 112px;
+.partners__title{
+  margin-left: 100px;
 }
 
-.faq__title{
-text-align: center;
+.contact__button {
+  margin-left: 400px;
 
 }
-
-.faq-question{
-  display: initial;
 }
 
-.faq__button{
-  
-}
+@media (max-width: 767px) {
+  /* Stiluri pentru telefoane mari */
 }
