@@ -738,14 +738,14 @@
   font-size: 60px;
   line-height: 117%;
   letter-spacing: -0.05em;
-  color: #ffffff;
+  color: black;
   margin-bottom: 36px;
   max-width: 784px;
 }
 
 .achievement__stat {
   font-family: var(--font-family);
-  color: white;
+  color: rgb(0, 0, 0);
   text-shadow: -1px -1px 0 #8258c8, 1px -1px 0 #2c84c8, -1px 1px 0 #8258c8,
     1px 1px 0 #2c84c8;
   font-weight: 700;
@@ -1465,28 +1465,27 @@ textarea {
 /* La dimensiuni mai mici de 1200px */
 @media (max-width: 1200px) {
   .hero__main__title img {
-    width: 550px;
     height: auto;
   }
+
   .hero__content {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
     gap: 50px;
-    margin-bottom: 50px;
   }
 
   .hero__title {
-    font-size: 70px;
-    margin-left: 0;
-    max-width: 90%;
-    text-align: center;
+    font-size: 4rem; /* Adjusting for better readability */
+    margin: 0;
+  }
+
+  .hero__bottom__right__paragraph {
+    margin-right: 45px;
   }
 
   .hero__paragraph {
     font-size: 14px;
-    margin-right: 0;
-    margin-bottom: 50px;
-    text-align: center;
+    margin: 0 10px 30px;
   }
 
   .hero__button {
@@ -1494,43 +1493,31 @@ textarea {
     height: 50px;
     font-size: 14px;
     margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: rgb(247, 97, 97);
+    color: white;
   }
 
   .hero__bottom {
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
-    height: 450px;
+    display: flex;
+  }
+
+  .hero__bottom__left,
+  .hero__bottom_right {
+    width: 100%;
+    text-align: center;
   }
 
   .hero__button__right {
     display: flex;
-    margin-left: 360px;
+    justify-content: center;
+    width: 100%;
   }
 
-  .hero__bottom__paragraph {
-    font-size: 30px;
-    margin: 40px 0 0;
-    margin-left: 25px;
-  }
-
-  .hero__main__title {
-    font-size: 180px;
-    margin: 50px 0 0;
+  .hero__main__title img {
   }
 
   .hero__bottom__right__paragraph {
-    font-size: 14px;
-    margin-left: 0;
-    text-align: center;
-    margin-left: 430px;
-  }
-
-  .hero__button__right {
-    width: 250px;
-    height: 70px;
-    font-size: 14px;
-    justify-content: center;
   }
 
   .hero__button__icon {
@@ -1578,6 +1565,11 @@ textarea {
 }
 
 @media (max-width: 1200px) {
+  .features__title {
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
   .services__title {
     display: flex;
     margin: 0;
@@ -1586,9 +1578,11 @@ textarea {
     margin-right: 0;
   }
 
-  .service__grid__container {
-    display: flex;
-    flex-wrap: wrap;
+  .service__grid__block--2 {
+    width: 370px;
+    height: 565px;
+  }
+  .service__grid__block {
   }
 }
 
@@ -1602,30 +1596,30 @@ textarea {
 @media (max-width: 1200px) {
   /* Stilurile specifice pentru ecranele de dimensiuni mici până la 1200px */
   .black__content {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Schimbă layout-ul pe mobil pentru a aranja elementele pe verticală */
-    gap: 20px; /* Micșorează spațiul dintre elemente */
   }
 
   .black__title {
-    font-size: 120px; /* Reduce dimensiunea titlului pentru ecranele mai mici */
+    font-size: 240px; /* Reduce dimensiunea titlului pentru ecranele mai mici */
     padding-top: 180px; /* Ajustează padding-ul */
   }
 
   .black__sutitle {
     font-size: 50px; /* Ajustează dimensiunea fontului pentru subtitlu */
+    margin-left: 208px;
   }
 
   .black__description {
+    margin-left: 208px; /* Redu lățimea maximă pentru descriere */
+  }
+  .black__description--2 {
     font-size: 14px; /* Micșorează fontul pentru descriere */
-    max-width: 600px; /* Redu lățimea maximă pentru descriere */
+
+    margin-left: 208px; /* Redu lățimea maximă pentru descriere */
   }
 
   .black__button {
-    width: auto;
-    padding: 10px 20px; /* Ajustează dimensiunea butonului */
-    margin-right: 0; /* Elimină marginea dreaptă pentru a alinia butonul */
+    margin-left: 500px;
+    margin-top: 250px;
   }
 
   .black__img {
@@ -1641,11 +1635,63 @@ textarea {
 }
 
 @media (max-width: 1200px) {
+  .achievements__content {
+    margin: 0;
+  }
+
+  .achievements__flex {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .achivement__row__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 122px;
+  }
   .blog__cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0;
+  }
+
+  .blog__title {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .blog__button {
+    margin: 25px 500px 0 0;
+  }
+
+  .blog__cards {
+    display: flex;
+    flex-direction: initial;
+  }
+
+  .blog__cards-item {
+    width: 360px;
+  }
+
+  .blog__img {
+    width: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .partners__title {
+    margin-left: 205px;
+    text-align: center;
   }
 }
 
@@ -1654,9 +1700,14 @@ textarea {
     margin: 0;
   }
 
-  .testimonial__content {
-    display: flex;
-    flex-direction: column;
+  .testimonial__text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .testimonial__author {
+    margin-left: 108px;
+    margin-bottom: 186px;
   }
 
   .testimonial__right {
@@ -1665,6 +1716,9 @@ textarea {
 }
 
 @media (max-width: 1200px) {
+  .faq__content {
+    margin-left: 150px;
+  }
   .faq__img {
     display: none;
   }
@@ -1690,13 +1744,55 @@ textarea {
     flex-direction: column;
   }
 
+  .contact-us__details {
+    display: initial;
+    text-align: center;
+  }
+
+  .contact-us__title {
+    margin-left: 162px;
+    text-align: center;
+  }
+  .contact-us__description {
+    max-width: 902px;
+  }
   .contact-us__mistake {
     width: auto;
     height: auto;
   }
 
+  .contact__content__bottom {
+    display: initial;
+
+    text-align: center;
+    margin-left: 150px;
+  }
+  .contact__title__bottom {
+    max-width: 1500px;
+  }
   .footer__content {
     display: flex;
     flex-direction: column;
+  }
+
+  .contact__button {
+    margin-left: 500px;
+    margin-bottom: 25px;
+  }
+
+  .footer__content--left {
+  }
+  .footer__logo {
+    margin-left: 306px;
+  }
+
+  .footer__items {
+    margin-left: 270px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .line {
+    display: none;
   }
 }
