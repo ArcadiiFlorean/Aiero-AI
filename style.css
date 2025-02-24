@@ -1900,23 +1900,123 @@ textarea {
   .blog__cards {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   .blog__cards-item {
     width: 450px;
+  }
+
+  .partners__title {
+    margin-left: 100px;
+  }
+
+  .contact__button {
+    margin-left: 400px;
+  }
+}
+/* Stiluri pentru telefoane mari */
+@media (max-width: 767px) {
+  .hero__bottom {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .hero__bottom__paragraph {
+    margin-left: 120px;
+  }
+
+  .hero__main__title {
+    margin-top: 100px;
+    margin: 60px 0px;
+  }
+
+  .hero__bottom__right__paragraph {
+    max-width: 500px;
+  }
+
+  .features__title {
+    min-width: 710px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  .black__title {
+    margin: 0;
+  }
+
+  .black__sutitle {
+    margin-left: 20px;
+  }
+
+  .black__description {
+    margin-left: 20px;
+  }
+
+  .black__description--2 {
+    margin-left: 20px;
+  }
+
+  .black__button {
+    margin: 26px 25px 37px 278px;
+  }
+
+  .achievements__heading {
+    margin: 0;
+  }
+
+  .achievement--modify {
+    margin-right: -55px;
+  }
+
+  .testimonial__left {
+    width: 724px;
+  }
+
+  .testimonial__author {
+    margin: 34px 101px 186px 283px;
+  }
+
+  .faq__content {
+    margin-left: 15px;
+  }
+
+  .partners__title {
+    margin-left: 27px;
+  }
+
+  .partners__logo {
+    margin: 48px;
+    gap: 27px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-us__title {
+    margin-left: 80px;
+    text-align: center;
 }
 
-.partners__title{
-  margin-left: 100px;
+.contact-us__description {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+
 }
 
 .contact__button {
-  margin-left: 400px;
-
-}
+  margin-left: 285px;
 }
 
-@media (max-width: 767px) {
-  /* Stiluri pentru telefoane mari */
+.footer__privacy{
+  margin: 0;
+}
 }
